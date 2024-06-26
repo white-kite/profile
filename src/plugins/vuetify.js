@@ -6,5 +6,8 @@ import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 
 export default createVuetify(
+  {
+    ssr: true,
+  }
   // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
 )
