@@ -53,8 +53,6 @@ app.use('*', async (req, res) => {
 
     const rendered = await render(url, ssrManifest)
 
-    console.log('@@@@', rendered)
-
     const html = template
       .replace(`<!--app-head-->`, rendered.head ?? '')
       .replace(`<!--app-html-->`, rendered.html ?? '')
