@@ -1,13 +1,14 @@
 <template>
-    <div class="contact">
-        <label>Contact 컴포넌트입니다.</label>
+    <div>
+        <label>Skill 컴포넌트입니다.</label>
+        <label class="skill">Java, JSP, Springboot, MySQL, Vue3.js, Python, MongoDB</label>
     </div>
 </template>
 <script setup>
 
 </script>
 <style scoped>
-.contact {
+.skill {
     display: block;
     width: 100%;
     background-color: #333;

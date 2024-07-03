@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="hi">
         <label>안녕하세요</label>
     </div>
 </template>
@@ -7,10 +7,9 @@
 
 </script>
 
-<style>
-div{
+<style scoped>
+.hi{
     position: relative;
     top:25px;
-    left:10px;
 }
 </style>

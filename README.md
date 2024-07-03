@@ -7,7 +7,7 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-node src/server.js
+npm start
 ```
 
 ### Compiles and minifies for production
