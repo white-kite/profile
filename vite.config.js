@@ -18,8 +18,8 @@ export default defineConfig({
     // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin
     vuetify({
       autoImport: true,
-      styles: 'expose', //Vuetify 스타일을 노출
-      //styles: { configFile: 'src/styles/settings.scss' }, // 추가: 스타일 설정 파일 경로
+      // styles: 'expose', //Vuetify 스타일을 노출
+      styles: { configFile: 'src/styles/settings.scss' }, // 추가: 스타일 설정 파일 경로
     }),
     ssr({
       pageFiles: ['src/pages/**/*.page.js', 'src/pages/**/*.page.vue']
@@ -48,7 +48,7 @@ export default defineConfig({
     alias: {
       '~': toPosixPath(path.resolve(__dirname, 'src')),
       '@': toPosixPath(path.resolve(__dirname, 'src')),
-    },
+    }
   },
   ssr: {
     noExternal: ['vuetify', 'vue'], // vue와 Vuetify를 noExternal로 설정하여 번들링

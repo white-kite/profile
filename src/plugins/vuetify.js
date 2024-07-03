@@ -1,6 +1,6 @@
 // Styles
 import '@mdi/font/css/materialdesignicons.css'
-import 'vuetify/styles'
+import '@/styles/settings.scss'
 
 // Vuetify
 import { createVuetify } from 'vuetify'

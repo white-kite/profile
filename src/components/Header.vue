@@ -11,17 +11,17 @@
   
   <style scoped>
   .header {
+    position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    margin-bottom: 10px;
     background-color: #333;
     color: white;
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 100;
   }
   
   .logo {

@@ -1,8 +1,10 @@
 <template>
     <div class="container">
-        <label class="title">Project 컴포넌트입니다.</label><br/>
-        <label class="subtitle">최근 프로젝트</label>
-        <div class="grid">
+        <div class="px-5">
+            <label class="title">Project 컴포넌트입니다.</label><br/>
+            <label class="subtitle">최근 프로젝트</label>
+        </div>
+        <div class="grid px-5">
             <div class="card">
                 <label>2024년, e학습터 서비스 구조개선</label>
             </div>
@@ -22,7 +24,7 @@
 <style scoped>
 .container {
     width: 100%;
-    padding: 20px;
+    padding: 20px 0;
 }
 .title {
     font-size: 1.5em;
