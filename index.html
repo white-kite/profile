@@ -1,19 +1,13 @@
-<!-- ssr 템플릿 역할 -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <link rel="icon" href="/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Vue SSR App</title>
-  <!--app-head-->
-</head>
-
-<body>
-  <div id="app"><!--app-html--></div> <!-- 서버에서 렌더링된 HTML이 이 위치에 삽입됩니다 -->
-  <script type="module" src="/src/entry-client.js"></script> <!-- 클라이언트 측 JavaScript 파일 -->
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Vue + TS</title>
+  </head>
+  <body>
+    <div id="app"><!--app-html--></div>
+    <script type="module" src="/src/entry-client.ts"></script>
+  </body>
 </html>
-

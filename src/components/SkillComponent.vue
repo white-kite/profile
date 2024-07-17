@@ -1,8 +1,9 @@
 <template>
-    <div>
-        <label class="skill">사용 기술</label>
-        <label class="skill">Java, JSP, Springboot, MySQL, Vue3.js, Python, MongoDB</label>
-    </div>
+  <v-row>
+      <v-col class="pa-3 skill" color="#333">
+        Java, JSP, Springboot, MySQL, Vue3.js, Python, MongoDB
+      </v-col>
+    </v-row>
 </template>
 <script setup>
 
