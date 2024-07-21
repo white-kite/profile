@@ -21,20 +21,3 @@
     box-sizing: border-box; /* 패딩 포함하여 width를 계산 */
 }
 </style>
-
-
-<!-- 아래와 같이 코드를 변경하면 화면에 전체가 채워지지 않음
-<template>
-  <v-container>
-    <v-row>
-      <v-col>
-        <v-card class="pa-3" color="#333" dark>
-          <v-card-text class="skill">
-            Java, JSP, Springboot, MySQL, Vue3.js, Python, MongoDB
-          </v-card-text>
-        </v-card>
-      </v-col>
-    </v-row>
-  </v-container>
-</template>
--->
