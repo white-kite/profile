@@ -9,7 +9,7 @@
             </v-col>
         <v-col>
             <v-sheet class="text-center" cols="12" md="6">
-                <img src="../assets/설탕이.jpg" class="profile-image rounded-circle"/>
+                <img src="../assets/sugar.jpg" class="profile-image rounded-circle"/>
             </v-sheet>
         </v-col>
         </v-row>
