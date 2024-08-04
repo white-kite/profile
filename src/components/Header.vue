@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-      <img src="../assets/logo.png" alt="Logo" class="logo" />
+      <router-link to="/"><img src="../assets/logo.png" alt="Logo" class="logo" /></router-link>
       <Navigation />
     </header>
   </template>
