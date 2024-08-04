@@ -34,7 +34,7 @@
         </v-row>
         <v-row>
             <v-col cols="12" class="text-right">
-                <v-btn variant="tonal plain" href="/projects">자세히보기</v-btn>
+                <v-btn variant="tonal" href="/projects">자세히보기</v-btn>
             </v-col>
         </v-row>
     </v-container>
