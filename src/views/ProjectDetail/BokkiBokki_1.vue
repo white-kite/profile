@@ -1,5 +1,5 @@
 <template>
-    <label>BokkiBokki_1 입니다.</label>
+    <h1>보끼보끼마을: 떡볶이 판매 사이트 개발</h1>
     <div>
         <v-row>
             <v-col cols="3" align-self="center">
@@ -39,37 +39,61 @@
         </v-row>
         <v-row>
             <v-col cols="3" align-self="center">
-                <p class="text-lg-center">
-                    업무성과
-                </p>
+                <p class="text-lg-center">업무성과</p>
             </v-col>
             <v-col cols="9">
                 <label>
-                    - PHP로 웹 개발에 입문<br/>
-                    - 웹 개발에 대한 열정을 발견하고 진로 방향을 웹 개발자로 확립함<br/>
-                    - ‘웹 프로그래밍’ 과목에서 A+ 성적을 취득함<br/>
+                    - PHP로 웹 개발에 입문<br />
+                    - 웹 개발에 대한 열정을 발견하고 진로 방향을 웹 개발자로 확립함<br />
+                    - ‘웹 프로그래밍’ 과목에서 A+ 성적을 취득함<br />
                 </label>
             </v-col>
         </v-row>
         <v-row>
             <v-col cols="3" align-self="center">
-                <p class="text-lg-center">
-                    업무상세
-                </p>
+                <p class="text-lg-center">업무상세</p>
             </v-col>
             <v-col cols="9">
                 <label>
-                    PHP와 MySQL을 활용하여 떡볶이 판매 사이트를 개발했습니다. 또한 개발 결과에 대해 발표했습니다. 팀의 리더로서 주도적으로 기능을 개발하였으며 팀원들의 능력에 따라 분업을 진행하여 기간 내에 개발 및 발표준비를 마치고 성공적인 결과를 발표했습니다. 분업을 한 덕분에 버튼이나 색감, 헤더(header)와 푸터(footer)가 다른 팀에 비해 차별화된 디자인의 결과물이 나왔습니다. 개발하는 동안 여러 책과 문서를 살펴보며 어떻게 코드를 작성해야 원하는 화면과 기능이 구현될 것인가에 대한 고민을 하였습니다. 그리고 이러한 탐구에 재미를 느끼고 실무에 관심을 가졌으며 진로 방향을 웹 개발자로 확립하게 되었습니다.
+                    PHP와 MySQL을 활용하여 떡볶이 판매 사이트를 개발했습니다. 또한 개발 결과에 대해 발표했습니다. 팀의
+                    리더로서 주도적으로 기능을 개발하였으며 팀원들의 능력에 따라 분업을 진행하여 기간 내에 개발 및
+                    발표준비를 마치고 성공적인 결과를 발표했습니다. 분업을 한 덕분에 버튼이나 색감, 헤더(header)와
+                    푸터(footer)가 다른 팀에 비해 차별화된 디자인의 결과물이 나왔습니다. 개발하는 동안 여러 책과 문서를
+                    살펴보며 어떻게 코드를 작성해야 원하는 화면과 기능이 구현될 것인가에 대한 고민을 하였습니다. 그리고
+                    이러한 탐구에 재미를 느끼고 실무에 관심을 가졌으며 진로 방향을 웹 개발자로 확립하게 되었습니다.
                 </label>
+            </v-col>
+        </v-row>
+        <v-row>
+            <v-col> 아래 사진은 발표자료의 일부입니다. </v-col>
+        </v-row>
+        <v-row>
+            <v-col cols="6">
+                <img src="../../assets/projectDetail/Bokki_1.png" class="responsive-img" />
+            </v-col>
+            <v-col cols="6">
+                <img src="../../assets/projectDetail/Bokki_2.png" class="responsive-img" />
+            </v-col>
+            <v-col cols="6">
+                <img src="../../assets/projectDetail/Bokki_3.png" class="responsive-img" />
+            </v-col>
+            <v-col cols="6">
+                <img src="../../assets/projectDetail/Bokki_4.png" class="responsive-img" />
             </v-col>
         </v-row>
     </div>
 
-    <v-btn variant="tonal" href="/projects">되돌아가기</v-btn>
+    <v-btn variant="tonal" @click="goBack">되돌아가기</v-btn>
 </template>
 <script setup>
-
+const goBack = () => {
+    window.history.back(); // 이전 페이지로 이동하는 브라우저의 내장 메서드
+};
 </script>
 <style scoped>
-
+.responsive-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 </style>
