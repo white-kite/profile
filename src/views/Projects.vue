@@ -16,14 +16,14 @@
       <v-row class="px-5" dense>
         <v-col v-for="(project, index) in filteredProjects" :key="index" cols="12" md="4">
           <v-card class="mx=auto" outlined>
-            <a :href="project.link">
+            <routerLink :to="project.link">
               <v-img :src="project.image" :width="300" aspect-ratio="16/9" cover height="200px" >
               </v-img>
               <v-card-text>
                 {{ project.sort }} <br/>
                 {{ project.title }}
               </v-card-text>
-            </a>
+            </routerLink>
           </v-card>
         </v-col>  
       </v-row>
@@ -42,7 +42,7 @@ const projects = ref([
   {
     sort: '개인',
     title: '2024년, Three.js를 활용한 크리스마스 프로젝트',
-    link: '/ChristmasPrj',
+    link: '/projects/ChristmasPrj',
     image: 'src/assets/projectDetail/sugar.jpg'
   },
   {
@@ -96,7 +96,7 @@ const projects = ref([
   {
     sort: '학교',
     title: '2019년, 보끼보끼마을: 떡볶이 판매 사이트 개발',
-    link: '/projects',
+    link: '/projects/BokkiBokki_1',
     image: 'src/assets/projectDetail/sugar.jpg'
   },
 ])
