@@ -3,7 +3,7 @@
     <div>
         <v-row>
             <v-col cols="3" align-self="center">
-                <p class="text-lg-center">프로젝트명</p>
+                <p class="text-center">프로젝트명</p>
             </v-col>
             <v-col cols="9">
                 <label>보끼보끼마을: 떡볶이 판매 사이트 개발</label>
@@ -11,13 +11,13 @@
         </v-row>
         <v-row>
             <v-col cols="3">
-                <p class="text-lg-center">수행기간</p>
+                <p class="text-center">수행기간</p>
             </v-col>
             <v-col cols="3">
                 <label>2019.09-2019.12</label>
             </v-col>
             <v-col cols="3">
-                <p class="text-lg-center">발주처</p>
+                <p class="text-center">발주처</p>
             </v-col>
             <v-col cols="3">
                 <label>학교 과제 프로젝트</label>
@@ -25,13 +25,13 @@
         </v-row>
         <v-row>
             <v-col cols="3" align-self="center">
-                <p class="text-lg-center">주요업무</p>
+                <p class="text-center">주요업무</p>
             </v-col>
             <v-col cols="3">
                 <label>떡볶이 판매 웹사이트 개발 및 관리 총괄, 팀 리더 역할 수행, 프로젝트 결과 발표</label>
             </v-col>
             <v-col cols="3">
-                <p class="text-lg-center">사용도구, 언어 및 기술</p>
+                <p class="text-center">사용도구, 언어 및 기술</p>
             </v-col>
             <v-col cols="3">
                 <label>메모장, MySQL, PHP</label>
@@ -39,7 +39,7 @@
         </v-row>
         <v-row>
             <v-col cols="3" align-self="center">
-                <p class="text-lg-center">업무성과</p>
+                <p class="text-center">업무성과</p>
             </v-col>
             <v-col cols="9">
                 <label>
@@ -51,7 +51,7 @@
         </v-row>
         <v-row>
             <v-col cols="3" align-self="center">
-                <p class="text-lg-center">업무상세</p>
+                <p class="text-center">업무상세</p>
             </v-col>
             <v-col cols="9">
                 <label>
