@@ -6,6 +6,7 @@
         <label>할 수 있을 때 많이 경험 해보고 공부해서 시스템 분석가를 목표로 하는!</label><br />
         <label>부지런히 노력하여 기회를 잡을 수 있게 준비 된 사람이 되도록!</label><br />
         <label>동료와 상사와의 대화 또는 회의를 통해 개선점을 찾고 반영하는! </label><br />
+        <label>함께 열심으로 일할 동료와 회사를 찾고 있는! </label><br />
     </div>
     <div>
         <h2>학력&경력</h2>
@@ -37,21 +38,21 @@
         <h2>취득자격</h2>
         <v-row>
             <v-col cols="3">
-                <label>자격증명</label>
+                <label class="th">자격증명</label>
             </v-col>
             <v-col cols="3">
-                <label>자격등록번호</label>
+                <label class="th">자격등록번호</label>
             </v-col>
             <v-col cols="3">
-                <label>발급기관</label>
+                <label class="th">발급기관</label>
             </v-col>
             <v-col cols="3">
-                <label>취득일자</label>
+                <label class="th">취득일자</label>
             </v-col>
         </v-row>
         <v-row v-for="(cert, index) in certificates" :key="index" class="my-2">
             <v-col cols="3">
-                <v-card color="indigo" variant="flat">
+                <v-card class="certname" color="indigo" variant="flat">
                     <v-card-text>{{ cert.name }}</v-card-text>
                 </v-card>
             </v-col>
@@ -196,4 +197,76 @@ onBeforeUnmount(() => {
     clearInterval(interval);
 });
 </script>
-<style scoped></style>
+<style scoped>
+body {
+    padding: 20px; /* 상하좌우 모두 20px의 패딩을 추가 */
+}
+
+.hi label {
+    font-size: 18px; /* 크기 증가 */
+    color: #333; /* 진한 회색으로 가독성 향상 */
+    font-weight: bold; /* 굵게 */
+    margin-bottom: 10px; /* 각 라벨 사이의 간격 */
+}
+
+div {
+    margin-bottom: 10px;
+    padding: 10px; /* 내용과 경계 사이의 패딩 */
+    background-color: #f5f5f5; /* 연한 회색 배경 */
+}
+
+h2 {
+    color: #0D47A1; /* 더 진한 파란색 */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.v-btn {
+    background-color: #2196F3; /* 밝은 파란색 */
+    color: white;
+    font-weight: bold;
+}
+
+.v-slider .v-slider__thumb {
+    background-color: #0D47A1; /* 더 진한 파란색 */
+}
+
+/* 테이블 헤더 스타일 */
+.th {
+    text-align: center; /* 중앙 정렬 */
+    font-weight: bold; /* 볼드체 */
+    font-size: 20px; /* 글자 크기 20px */
+    align-items: center; /* 수직 중앙 정렬 */
+    justify-content: center; /* 수평 중앙 정렬 */
+}
+
+.v-card {
+    background-color: #ffffff; /* 흰색 배경 */
+    border-radius: 8px; /* 둥근 모서리 */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* 그림자 효과 */
+    transition: transform 0.3s; /* 호버 효과를 위한 변환 */
+}
+
+.v-card .v-card-text {
+    background-color: #ffffff; /* 흰색 배경 */
+    color: black; /* 글자색 변경 */
+    font-size: 20px; /* 글자 크기 증가 */
+    text-align: center; /* 중앙 정렬 */
+}
+
+/* 자격증명 카드 스타일 */
+.certname .v-card-text {
+    background-color: #3F51B5;
+    color: white; /* 글자색 하얀색으로 변경 */
+    font-size: 20px; /* 글자 크기 증가 */
+    font-weight: 700;
+    text-align: center; /* 가운데 정렬 */
+}
+
+.my-2:hover {
+    transform: translateY(-5px); /* 마우스 오버 시 행 전체가 위로 움직임 */
+    transition: transform 0.3s; /* 부드러운 움직임 효과 */
+}
+
+</style>
+

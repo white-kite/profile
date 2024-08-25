@@ -96,4 +96,44 @@ const goBack = () => {
     height: 100%;
     object-fit: cover;
 }
+
+
+body {
+    background-color: #ffffff; /* 밝은 배경 */
+    color: #333; /* 짙은 회색 텍스트 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 가독성 좋은 폰트 */
+}
+
+h1 {
+    text-align: center; /* 중앙 정렬 */
+    margin-bottom: 20px; /* 여백 */
+}
+
+p, label {
+    color: #555; /* 중간 회색 */
+    font-size: 16px; /* 적절한 텍스트 크기 */
+}
+
+.v-col {
+    padding: 10px; /* 컬럼 내부 패딩 */
+}
+
+.v-btn {
+    font-size: 18px; /* 버튼 글자 크기 */
+    padding: 10px 20px; /* 버튼 패딩 */
+}
+
+.v-btn:hover {
+    background-color: #1E88E5; /* 버튼 호버 색상 */
+    cursor: pointer; /* 포인터 커서 */
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto; /* 이미지 자연스러운 비율로 조정 */
+    object-fit: contain; /* 이미지 잘림 방지 */
+    border-radius: 5px; /* 이미지 둥근 모서리 */
+    margin-bottom: 20px; /* 이미지 간 간격 */
+}
+
 </style>
