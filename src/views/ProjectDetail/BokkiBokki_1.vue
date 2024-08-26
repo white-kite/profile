@@ -1,47 +1,48 @@
 <template>
-    <h1>보끼보끼마을: 떡볶이 판매 사이트 개발</h1>
+    <v-container>
+        <h1>보끼보끼마을: 떡볶이 판매 사이트 개발</h1>
     <div>
         <v-row>
-            <v-col cols="3" align-self="center">
-                <p class="text-center">프로젝트명</p>
+            <v-col cols="2" align-self="center">
+                <p class="text-center font-weight-black">프로젝트명</p>
             </v-col>
-            <v-col cols="9">
+            <v-col cols="10">
                 <label>보끼보끼마을: 떡볶이 판매 사이트 개발</label>
             </v-col>
         </v-row>
         <v-row>
-            <v-col cols="3">
-                <p class="text-center">수행기간</p>
+            <v-col cols="2">
+                <p class="text-center font-weight-black">수행기간</p>
             </v-col>
-            <v-col cols="3">
+            <v-col cols="4">
                 <label>2019.09-2019.12</label>
             </v-col>
             <v-col cols="3">
-                <p class="text-center">발주처</p>
+                <p class="text-center font-weight-black">발주처</p>
             </v-col>
             <v-col cols="3">
                 <label>학교 과제 프로젝트</label>
             </v-col>
         </v-row>
         <v-row>
-            <v-col cols="3" align-self="center">
-                <p class="text-center">주요업무</p>
+            <v-col cols="2" align-self="center">
+                <p class="text-center font-weight-black">주요업무</p>
             </v-col>
-            <v-col cols="3">
+            <v-col cols="4">
                 <label>떡볶이 판매 웹사이트 개발 및 관리 총괄, 팀 리더 역할 수행, 프로젝트 결과 발표</label>
             </v-col>
             <v-col cols="3">
-                <p class="text-center">사용도구, 언어 및 기술</p>
+                <p class="text-center font-weight-black">사용도구, 언어 및 기술</p>
             </v-col>
             <v-col cols="3">
                 <label>메모장, MySQL, PHP</label>
             </v-col>
         </v-row>
         <v-row>
-            <v-col cols="3" align-self="center">
-                <p class="text-center">업무성과</p>
+            <v-col cols="2" align-self="center">
+                <p class="text-center font-weight-black">업무성과</p>
             </v-col>
-            <v-col cols="9">
+            <v-col cols="10">
                 <label>
                     - PHP로 웹 개발에 입문<br />
                     - 웹 개발에 대한 열정을 발견하고 진로 방향을 웹 개발자로 확립함<br />
@@ -50,10 +51,10 @@
             </v-col>
         </v-row>
         <v-row>
-            <v-col cols="3" align-self="center">
-                <p class="text-center">업무상세</p>
+            <v-col cols="2" align-self="center">
+                <p class="text-center font-weight-black">업무상세</p>
             </v-col>
-            <v-col cols="9">
+            <v-col cols="10" class="text-justify">
                 <label>
                     PHP와 MySQL을 활용하여 떡볶이 판매 사이트를 개발했습니다. 또한 개발 결과에 대해 발표했습니다. 팀의
                     리더로서 주도적으로 기능을 개발하였으며 팀원들의 능력에 따라 분업을 진행하여 기간 내에 개발 및
@@ -64,7 +65,7 @@
                 </label>
             </v-col>
         </v-row>
-        <v-row>
+        <v-row class="mt-10">
             <v-col> 아래 사진은 발표자료의 일부입니다. </v-col>
         </v-row>
         <v-row>
@@ -84,6 +85,7 @@
     </div>
 
     <v-btn variant="tonal" @click="goBack">되돌아가기</v-btn>
+    </v-container>
 </template>
 <script setup>
 const goBack = () => {
@@ -106,7 +108,7 @@ body {
 
 h1 {
     text-align: center; /* 중앙 정렬 */
-    margin-bottom: 20px; /* 여백 */
+    padding: 50px 0 /* 여백 */
 }
 
 p, label {
@@ -134,6 +136,7 @@ p, label {
     object-fit: contain; /* 이미지 잘림 방지 */
     border-radius: 5px; /* 이미지 둥근 모서리 */
     margin-bottom: 20px; /* 이미지 간 간격 */
+    border: 1px solid #0000000f;
 }
 
 </style>

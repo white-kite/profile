@@ -1,5 +1,6 @@
 <template>
-    <div class="hi">
+    <v-container>
+        <div class="hi">
         <label>안녕하세요</label><br />
         <label>학교에서 웹 개발에 눈을 뜨고 더 큰 세상을 보기 위해 IT 기업 개발자가 된!</label><br />
         <label>IT의료데이터과학 전공, IT융합 전공으로 이학사, IT융합학사 취득</label><br />
@@ -17,7 +18,7 @@
             </v-btn>
         </div>
         <v-slider v-model="sliderValue" :max="careers.length - 1" show-ticks="always" step="1" tick-size="6"></v-slider>
-        <div class="d-flex justify-space-between">
+        <div class="careers d-flex justify-space-between">
             <span
                 v-for="(career, index) in careers"
                 :key="index"
@@ -27,9 +28,9 @@
                 }"
                 @click="selectedIndex = index">
                 {{ career.title }} <br />
-                <template v-if="selectedIndex === index">
-                    {{ career.date }} <br />
-                    <span v-for="line in career.inst" :key="line">{{ line }}<br /></span>
+                <span class="text-subtitle-1">{{ career.date }}</span><br />
+                <template v-for="institute in career.institutes" :key="line" v-if="selectedIndex === index">
+                    <span class="text-subtitle-1">- {{ institute }}</span><br />
                 </template>
             </span>
         </div>
@@ -73,6 +74,7 @@
             </v-col>
         </v-row>
     </div>
+    </v-container>
 </template>
 <script setup>
 import { ref, watch, onMounted, onBeforeUnmount } from "vue";
@@ -80,28 +82,28 @@ import { ref, watch, onMounted, onBeforeUnmount } from "vue";
 const careers = ref([
     {
         title: "동명여자고등학교 졸업",
-        date: "2015.03~2018.02",
-        inst: ["인문계 이과"]
+        date: "2015.03. ~ 2018.02.",
+        institutes: ["인문계 이과"]
     },
     {
         title: "생활관 행정실 근무",
-        date: "2019.12-2021.06",
-        inst: ["행정실 근로학생"]
+        date: "2019.12. ~ 2021.06.",
+        institutes: ["행정실 근로학생"]
     },
     {
         title: "포위즈시스템 입사",
-        date: "2021.07-2022.02",
-        inst: ["SI사업본부 인턴"]
+        date: "2021.07. ~ 2022.02.",
+        institutes: ["SI사업본부 인턴"]
     },
     {
         title: "대구한의대학교 졸업",
-        date: "2018.03-2022.02",
-        inst: ["IT의료데이터과학전공(이학사)", "IT융합전공(IT융합학사)"]
+        date: "2018.03. ~ 2022.02.",
+        institutes: ["IT의료데이터과학전공(이학사)", "IT융합전공(IT융합학사)"]
     },
     {
         title: "포위즈시스템 근무중",
-        date: "2022.03~",
-        inst: ["SI사업본부 사원(2022.03~2023.06)", "부설연구소 연구원(2023.07~2024.06)", "SI사업본부 주임(2024.07~)"] // 배열로 만들어서 여러줄 표시 할 수 있도록
+        date: "2022.03 ~ 현재",
+        institutes: ["SI사업본부 사원(2022.03~2023.06)", "부설연구소 연구원(2023.07~2024.06)", "SI사업본부 주임(2024.07~)"] // 배열로 만들어서 여러줄 표시 할 수 있도록
     }
 ]);
 
@@ -212,7 +214,6 @@ body {
 div {
     margin-bottom: 10px;
     padding: 10px; /* 내용과 경계 사이의 패딩 */
-    background-color: #f5f5f5; /* 연한 회색 배경 */
 }
 
 h2 {
