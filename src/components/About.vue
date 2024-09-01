@@ -2,10 +2,15 @@
     <v-container>
         <v-row>
             <v-col class="py-10" cols="12" md="6">
-                <p class="text-h4 mb-3">About 컴포넌트입니다.</p>
                 <p class="text-h3 mb-3">안녕하세요?</p>
                 <p class="text-h4 mb-3">개발자입니다.</p>
-                <v-btn variant="outlined" class="text-right" href="/about">자세히보기</v-btn>
+                <template>
+                    <router-link to="/about" class="text-right">
+                        <v-btn variant="outlined">
+                        자세히보기
+                        </v-btn>
+                    </router-link>
+                </template>
             </v-col>
         <v-col>
             <v-sheet class="text-center" cols="12" md="6">

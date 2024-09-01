@@ -1,13 +1,13 @@
 <template>
     <v-container>
         <div class="hi">
-        <label>안녕하세요</label><br />
-        <label>학교에서 웹 개발에 눈을 뜨고 더 큰 세상을 보기 위해 IT 기업 개발자가 된!</label><br />
-        <label>IT의료데이터과학 전공, IT융합 전공으로 이학사, IT융합학사 취득</label><br />
-        <label>할 수 있을 때 많이 경험 해보고 공부해서 시스템 분석가를 목표로 하는!</label><br />
-        <label>부지런히 노력하여 기회를 잡을 수 있게 준비 된 사람이 되도록!</label><br />
-        <label>동료와 상사와의 대화 또는 회의를 통해 개선점을 찾고 반영하는! </label><br />
-        <label>함께 열심으로 일할 동료와 회사를 찾고 있는! </label><br />
+        <label v-html="'안녕하세요'"></label><br />
+        <label v-html="'학교에서 웹 개발에 눈을 뜨고 더 큰 세상을 보기 위해 <b>IT 기업 개발자</b>가 된!'"></label><br />
+        <label v-html="'IT의료데이터과학 전공, IT융합 전공으로 이학사, IT융합학사 취득'"></label><br />
+        <label v-html="'할 수 있을 때 많이 경험 해보고 공부해서 <b>시스템 분석가</b>를 목표로 하는!'"></label><br />
+        <label v-html="'<b>부지런히 노력하여 기회를 잡을 수 있게 준비 된 사람</b>이 되도록!'"></label><br />
+        <label v-html="'<b>동료와 상사와의 대화 또는 회의를 통해 개선점을 찾고 반영하는!</b>'"></label><br />
+        <label v-html="'<b>함께 열심으로 일할 동료와 회사를 찾고 있는!</b>'"></label><br />
     </div>
     <div>
         <h2>학력&경력</h2>
@@ -29,8 +29,8 @@
                 @click="selectedIndex = index">
                 {{ career.title }} <br />
                 <span class="text-subtitle-1">{{ career.date }}</span><br />
-                <template v-for="institute in career.institutes" :key="line" v-if="selectedIndex === index">
-                    <span class="text-subtitle-1">- {{ institute }}</span><br />
+                <template v-for="position in career.positions" :key="line" v-if="selectedIndex === index">
+                    <span class="text-subtitle-1">- {{ position }}</span><br />
                 </template>
             </span>
         </div>
@@ -83,27 +83,27 @@ const careers = ref([
     {
         title: "동명여자고등학교 졸업",
         date: "2015.03. ~ 2018.02.",
-        institutes: ["인문계 이과"]
+        positions: ["인문계 이과"]
     },
     {
         title: "생활관 행정실 근무",
         date: "2019.12. ~ 2021.06.",
-        institutes: ["행정실 근로학생"]
+        positions: ["행정실 근로학생"]
     },
     {
         title: "포위즈시스템 입사",
         date: "2021.07. ~ 2022.02.",
-        institutes: ["SI사업본부 인턴"]
+        positions: ["SI사업본부 인턴"]
     },
     {
         title: "대구한의대학교 졸업",
         date: "2018.03. ~ 2022.02.",
-        institutes: ["IT의료데이터과학전공(이학사)", "IT융합전공(IT융합학사)"]
+        positions: ["IT의료데이터과학전공(이학사)", "IT융합전공(IT융합학사)"]
     },
     {
         title: "포위즈시스템 근무중",
         date: "2022.03 ~ 현재",
-        institutes: ["SI사업본부 사원(2022.03~2023.06)", "부설연구소 연구원(2023.07~2024.06)", "SI사업본부 주임(2024.07~)"] // 배열로 만들어서 여러줄 표시 할 수 있도록
+        positions: ["SI사업본부 사원(2022.03~2023.06)", "부설연구소 연구원(2023.07~2024.06)", "SI사업본부 주임(2024.07~)"] // 배열로 만들어서 여러줄 표시 할 수 있도록
     }
 ]);
 
@@ -207,7 +207,6 @@ body {
 .hi label {
     font-size: 18px; /* 크기 증가 */
     color: #333; /* 진한 회색으로 가독성 향상 */
-    font-weight: bold; /* 굵게 */
     margin-bottom: 10px; /* 각 라벨 사이의 간격 */
 }
 
@@ -217,14 +216,11 @@ div {
 }
 
 h2 {
-    color: #0D47A1; /* 더 진한 파란색 */
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .v-btn {
-    background-color: #2196F3; /* 밝은 파란색 */
-    color: white;
     font-weight: bold;
 }
 

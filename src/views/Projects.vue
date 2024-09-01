@@ -4,7 +4,7 @@
           <v-col cols="12">
               <v-row class="px-5">
                   <v-col>
-                      <v-label class="text-h4">최근 프로젝트</v-label>
+                      <h2>최근 프로젝트</h2>
                   </v-col>
               </v-row>
           </v-col>
@@ -112,4 +112,8 @@ const filteredProjects = computed(() => {
 
 </script>
 <style scoped>
+h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 </style>

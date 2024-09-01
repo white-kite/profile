@@ -4,7 +4,7 @@
             <v-col cols="12">
                 <v-row class="px-5">
                     <v-col>
-                        <v-label class="text-h4">최근 프로젝트</v-label>
+                        <h2>최근 프로젝트</h2>
                     </v-col>
                 </v-row>
             </v-col>
@@ -34,7 +34,9 @@
         </v-row>
         <v-row>
             <v-col cols="12" class="text-right">
-                <v-btn variant="tonal" href="/projects">자세히보기</v-btn>
+                <router-link to="/projects">
+                    <v-btn variant="tonal">자세히보기</v-btn>
+                </router-link>
             </v-col>
         </v-row>
     </v-container>
@@ -43,4 +45,13 @@
 
 </script>
 <style scoped>
+.v-btn {
+    font-weight: bold;
+}
+
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 </style>
