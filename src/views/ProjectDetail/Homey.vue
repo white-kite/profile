@@ -89,10 +89,11 @@
 </template>
 <script setup>
 import { ref } from "vue";
-import picture_1 from '../../assets/projectDetail/Bokki_1.png';
-import picture_2 from '../../assets/projectDetail/Bokki_2.png';
-import picture_3 from '../../assets/projectDetail/Bokki_3.png';
-import picture_4 from '../../assets/projectDetail/Bokki_4.png';
+import picture_1 from '../../assets/projectDetail/Homey_Main.png';
+import picture_2 from '../../assets/projectDetail/Homey_LoginMain.png';
+import picture_3 from '../../assets/projectDetail/Homey_HomeUpdate.png';
+import picture_4 from '../../assets/projectDetail/Homey_Login.png';
+import picture_5 from '../../assets/projectDetail/Homey_UserCreate.png';
 
 const goBack = () => {
     window.history.back(); // 이전 페이지로 이동하는 브라우저의 내장 메서드
@@ -100,31 +101,41 @@ const goBack = () => {
 
 // 프로젝트 상세 내용을 객체로 관리
 const projectDetails = {
-  projectName: "보끼보끼마을: 떡볶이 판매 사이트 개발",
-  duration: "2019.09-2019.12",
-  client: "학교 과제 프로젝트",
-  mainTasks: "떡볶이 판매 웹사이트 개발 및 관리 총괄, 팀 리더 역할 수행, 프로젝트 결과 발표",
-  tools: "메모장, MySQL, PHP",
+  projectName: "Homey: 직접 구현한 커뮤니티 웹 애플리케이션 런칭",
+  duration: "2022.07-2023.01",
+  client: "개인 스터디 프로젝트",
+  mainTasks: `데이터 설계, 스프링부트 기반의 홈 목록/홈 데이터 수정 로직 및 화면 구현, 
+  스프링시큐리티를 활용한 로그인 로직 구현, 반응형 웹을 위한 CSS 적용`,
+  tools: `인프런강의(: ①스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술 ② 스프링부트 시큐리티 & JWT), 
+          Eclipse, MySQL, Notion, SpringBoot, SpringBoot Security, Github`,
   results: `
-    - PHP로 웹 개발에 입문<br />
-    - 웹 개발에 대한 열정을 발견하고 진로 방향을 웹 개발자로 확립함<br />
-    - ‘웹 프로그래밍’ 과목에서 A+ 성적을 취득함<br />
+    - 사내 뉴스레터를 통해 스터디 후기와 커뮤니티 사이트 URL을 공유하여 직원 간 소통 강화 및 모범사례 제시로 기여<br />
+    - 스프링부트와 스프링 시큐리티 프레임워크 사용에 기반한 웹 애플리케이션 개발<br />
+    - 새로운 기술 및 프레임워크에 대한 학습을 통한 개발 역량의 증진<br />
+    - PC환경 및 모바일 환경에서도 적용될 수 있도록 반응형 웹 구현
+    - 협업을 위한 깃허브, 브랜치 사용법을 익힘
   `,
   details: `
-    PHP와 MySQL을 활용하여 떡볶이 판매 사이트를 개발했습니다. 또한 개발 결과에 대해 발표했습니다.
-    팀의 리더로서 주도적으로 기능을 개발하였으며 팀원들의 능력에 따라 분업을 진행하여 기간 내에 개발 및 발표 준비를 마쳤습니다.
-    발표를 통해 성공적인 결과를 공유했습니다. 개발하는 동안 여러 책과 문서를 살펴보며
-    어떻게 코드를 작성해야 원하는 화면과 기능이 구현될 것인가에 대한 고민을 했습니다.
-    이러한 탐구에 재미를 느끼고 실무에 관심을 가졌으며 진로 방향을 웹 개발자로 확립하게 되었습니다.
+    열정적인 신입사원 셋이 함께 기획한 커뮤니티 웹 사이트를 스프링부트와 스프링 시큐리티를 활용하여 개발했습니다. 
+    프로젝트 초기에 인프런 강의를 통해 스프링부트 기초를 다지고 실제 개발 과정에서는 
+    첨부파일과 댓글 기능을 AJAX로 구현하여 사용자 인터랙션을 향상시켰습니다. 
+    특히, 스프링 시큐리티를 이용한 로그인 기능에서 websecurityconfigureradapter를 사용하는 대신 
+    설정을 모두 Bean으로 등록하고 SecurityFilterChain에 HttpSecurity를 빌드한 return값을 
+    만드는 최신 방식을 적용하여 구현했습니다. <br />
+    또한, 반응형 웹 디자인을 구현하기 위해 HTML5/CSS 교육에서 배운 @media 쿼리를 활용하여 PC환경과 모바일 환경에서도 일관된 사용자 경험을 제공했습니다. 
+    깃허브와 노션을 활용한 협업으로 개발 과정의 문서화와 팀 내 커뮤니케이션을 원활하게 진행했습니다.
   `,
-  additionalText: "아래 사진은 발표자료의 일부입니다."
+  additionalText: `아래 이미지는 제가 구현한 로그인 전/후의 홈 목록 화면, 홈 수정 화면, 로그인/회원가입 
+    화면의 PC및 반응형 웹이 적용된 캡처입니다. 
+    (검은색 테두리로 되어있는 사진이 PC 개발자 모드에서 가로 360사이즈를 반영한 화면 사진입니다.)`
 };
 
 const images = ref([
   { src: picture_1 },
   { src: picture_2 },
   { src: picture_3 },
-  { src: picture_4 }
+  { src: picture_4 },
+  { src: picture_5 }
 ]);
 
 const dialog = ref(false);

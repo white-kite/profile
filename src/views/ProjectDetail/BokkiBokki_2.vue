@@ -89,10 +89,10 @@
 </template>
 <script setup>
 import { ref } from "vue";
-import picture_1 from '../../assets/projectDetail/Bokki_1.png';
-import picture_2 from '../../assets/projectDetail/Bokki_2.png';
-import picture_3 from '../../assets/projectDetail/Bokki_3.png';
-import picture_4 from '../../assets/projectDetail/Bokki_4.png';
+import picture_1 from '../../assets/projectDetail/Bokki2_1.png';
+import picture_2 from '../../assets/projectDetail/Bokki2_2.png';
+import picture_3 from '../../assets/projectDetail/Bokki2_3.png';
+import picture_4 from '../../assets/projectDetail/Bokki2_4.png';
 
 const goBack = () => {
     window.history.back(); // 이전 페이지로 이동하는 브라우저의 내장 메서드
@@ -100,22 +100,20 @@ const goBack = () => {
 
 // 프로젝트 상세 내용을 객체로 관리
 const projectDetails = {
-  projectName: "보끼보끼마을: 떡볶이 판매 사이트 개발",
-  duration: "2019.09-2019.12",
+  projectName: "보끼보끼마을: 떡볶이 판매 사이트 기능개선 및 시스템 분석",
+  duration: "2021.03-2021.06",
   client: "학교 과제 프로젝트",
-  mainTasks: "떡볶이 판매 웹사이트 개발 및 관리 총괄, 팀 리더 역할 수행, 프로젝트 결과 발표",
-  tools: "메모장, MySQL, PHP",
+  mainTasks: "웹 기능개선, 시스템 분석, 발표",
+  tools: "Gliffy, PPT, 메모장 Xampp(Apache, MySQL), VSCode, PHP",
   results: `
-    - PHP로 웹 개발에 입문<br />
-    - 웹 개발에 대한 열정을 발견하고 진로 방향을 웹 개발자로 확립함<br />
-    - ‘웹 프로그래밍’ 과목에서 A+ 성적을 취득함<br />
+    - 교수님의 극찬을 받고 ‘시스템 분석 및 설계’ 과목에서 A+ 성적을 취득함<br />
+    - 시스템 기능 개선 경험<br />
+    - 시스템 분석 능력 향상<br />
   `,
   details: `
-    PHP와 MySQL을 활용하여 떡볶이 판매 사이트를 개발했습니다. 또한 개발 결과에 대해 발표했습니다.
-    팀의 리더로서 주도적으로 기능을 개발하였으며 팀원들의 능력에 따라 분업을 진행하여 기간 내에 개발 및 발표 준비를 마쳤습니다.
-    발표를 통해 성공적인 결과를 공유했습니다. 개발하는 동안 여러 책과 문서를 살펴보며
-    어떻게 코드를 작성해야 원하는 화면과 기능이 구현될 것인가에 대한 고민을 했습니다.
-    이러한 탐구에 재미를 느끼고 실무에 관심을 가졌으며 진로 방향을 웹 개발자로 확립하게 되었습니다.
+    시스템 분석 및 설계 수업을 듣고 Hypertext Preprocessor(PHP)로 시스템을 개발한 후 수업 내용을 기반으로 분석한 내용을 발표했습니다. 
+    요구분석과 모델링, 아키텍처/데이터/UI 설계 등의 분류로 시스템을 분석했습니다. 
+    이 과정에서 2019년 팀 프로젝트로 개발했던 떡볶이 판매 사이트 소스코드를 한 번 더 활용하여 삭제 기능 실행 시 확인용 alert를 추가하는 등 이전 보다 기능이 잘 작동되도록 구현하였습니다.
   `,
   additionalText: "아래 사진은 발표자료의 일부입니다."
 };
@@ -160,7 +158,7 @@ h1 {
 }
 
 p, label {
-    color: #1a1818;
+    color: #1a1818; /* 중간 회색 */
     font-size: 16px; /* 적절한 텍스트 크기 */
 }
 

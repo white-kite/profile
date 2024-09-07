@@ -89,10 +89,8 @@
 </template>
 <script setup>
 import { ref } from "vue";
-import picture_1 from '../../assets/projectDetail/Bokki_1.png';
-import picture_2 from '../../assets/projectDetail/Bokki_2.png';
-import picture_3 from '../../assets/projectDetail/Bokki_3.png';
-import picture_4 from '../../assets/projectDetail/Bokki_4.png';
+import picture_1 from '../../assets/projectDetail/Certification_InformationProcessingEngineer.png';
+import picture_2 from '../../assets/projectDetail/Certification_SW_L5.png';
 
 const goBack = () => {
     window.history.back(); // 이전 페이지로 이동하는 브라우저의 내장 메서드
@@ -100,31 +98,31 @@ const goBack = () => {
 
 // 프로젝트 상세 내용을 객체로 관리
 const projectDetails = {
-  projectName: "보끼보끼마을: 떡볶이 판매 사이트 개발",
-  duration: "2019.09-2019.12",
-  client: "학교 과제 프로젝트",
-  mainTasks: "떡볶이 판매 웹사이트 개발 및 관리 총괄, 팀 리더 역할 수행, 프로젝트 결과 발표",
-  tools: "메모장, MySQL, PHP",
+  projectName: "EKP 만들기 프로젝트: IPP 일학습병행제 및 신입사원 교육",
+  duration: "2021.07-2022.02",
+  client: "포위즈시스템",
+  mainTasks: "부서 관리 기능 설계 및 구현",
+  tools: "EgovFramework, Eclipse, Java, MySQL, SVN",
   results: `
-    - PHP로 웹 개발에 입문<br />
-    - 웹 개발에 대한 열정을 발견하고 진로 방향을 웹 개발자로 확립함<br />
-    - ‘웹 프로그래밍’ 과목에서 A+ 성적을 취득함<br />
+    - 회사의 스타일에 맞는 정의서 및 설계서 작성법 학습<br />
+    - JSP와 MVC 패턴을 활용한 개발 역량 향상 및 SVN을 통한 효율적인 팀 협업 경험 습득<br />
+    - 정보처리기사와 SW개발_L5_20V1 자격 취득<br />
   `,
   details: `
-    PHP와 MySQL을 활용하여 떡볶이 판매 사이트를 개발했습니다. 또한 개발 결과에 대해 발표했습니다.
-    팀의 리더로서 주도적으로 기능을 개발하였으며 팀원들의 능력에 따라 분업을 진행하여 기간 내에 개발 및 발표 준비를 마쳤습니다.
-    발표를 통해 성공적인 결과를 공유했습니다. 개발하는 동안 여러 책과 문서를 살펴보며
-    어떻게 코드를 작성해야 원하는 화면과 기능이 구현될 것인가에 대한 고민을 했습니다.
-    이러한 탐구에 재미를 느끼고 실무에 관심을 가졌으며 진로 방향을 웹 개발자로 확립하게 되었습니다.
+    일학습병행제를 통해 부장님의 지도하에 회사의 문서 작성 양식과 정의서의 기본을 배웠습니다.
+    이 초기 단계에서 프로젝트의 범위와 목표를 정의하는 데 필요한 기술적 문서의 구성과 작성 방법을 익혔습니다. 
+    전자정부프레임워크(EgovFramework) 샘플을 분석하면서 JavaServer Pages(JSP)에 대한 실질적인 학습을 진행했습니다. 
+    이후 신입 사원 분들이 합류하여 본격적으로 구현할 기능을 분담했고 저는 부서관리 기능을 중심으로 분석, 
+    설계 및 개발 과정을 효과적으로 수행하였습니다. <br />
+    또한, 프로젝트를 진행하는 동안 정보처리기사 실기와 SW개발_L5_20V1 자격증을 준비하여 성공적으로 취득했습니다.
+    이 과정에서 습득한 기술 지식에 대한 이해를 바탕으로 프로젝트를 보다 효과적으로 수행할 수 있었습니다.
   `,
-  additionalText: "아래 사진은 발표자료의 일부입니다."
+  additionalText: "프로젝트 자료는 보안상의 이유로 직접 제공할 수 없습니다. 대신, 정보처리기사와 SW 개발_L5_20V1 취득사항 확인서를 입증할 수 있습니다."
 };
 
 const images = ref([
   { src: picture_1 },
-  { src: picture_2 },
-  { src: picture_3 },
-  { src: picture_4 }
+  { src: picture_2 }
 ]);
 
 const dialog = ref(false);
@@ -160,7 +158,7 @@ h1 {
 }
 
 p, label {
-    color: #1a1818;
+    color: #1a1818; /* 중간 회색 */
     font-size: 16px; /* 적절한 텍스트 크기 */
 }
 

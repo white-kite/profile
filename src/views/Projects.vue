@@ -78,19 +78,19 @@ const projects = ref([
   {
     sort: '개인',
     title: '2022년, Homey: 직접 구현한 커뮤니티 웹 애플리케이션 런칭',
-    link: '/projects',
+    link: '/projects/Homey',
     image: 'src/assets/projectDetail/sugar.jpg'
   },
   {
     sort: '회사',
     title: '2021년, EKP 만들기 프로젝트: 신입사원 교육',
-    link: '/projects',
+    link: '/projects/EKP',
     image: 'src/assets/projectDetail/sugar.jpg'
   },
   {
     sort: '학교',
     title: '2021년, 보끼보끼마을: 떡볶이 판매 사이트 기능개선 및 시스템 분석',
-    link: '/projects',
+    link: '/projects/BokkiBokki_2',
     image: 'src/assets/projectDetail/sugar.jpg'
   },
   {
